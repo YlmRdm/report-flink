@@ -2,6 +2,8 @@
     Yalım's LaTeX template
 =================================
 
+This is a LaTeX project to write and present the report about Apache Flink.
+
 The template is using the `Memoir class <http://www.ctan.org/tex-archive/macros/latex/contrib/memoir/>`_
 which includes a lot of useful and predefined commands. See the "Miscellaneous" chapter of the
 `Memoir manual <http://tug.ctan.org/tex-archive/macros/latex/contrib/memoir/memman.pdf>`_.
@@ -36,25 +38,25 @@ Manual typesetting
 
 Run the following for manual typesetting the document::
 
- xelatex Thesis.tex
- biber Thesis.bcf
- xelatex Thesis.tex
- xelatex Thesis.tex
+xelatex Thesis.tex
+biber Thesis.bcf
+xelatex Thesis.tex
+xelatex Thesis.tex
 
 make(file)
 ----------
 
 With the templates comes a ``Makefile`` using ``latexmk`` for easy compiling. There are two ways to use make either by::
 
- make
+make
 
 or the ``auto`` mode which automatic updates the pdf if \*.tex or \*.bib files are changed::
 
- make auto
+make auto
 
 To clean up project run::
 
- make clean
+make clean
 
 TextMate
 --------
@@ -77,17 +79,17 @@ Setup
 
 Open Preferences and ensure under "Editor" that "Editor Font Encoding" is set to::
 
- UTF-8
+UTF-8
 
 In Preferences under "Quick Build" change it to "User" and the following.
 
 For Windows users::
 
- "xelatex -synctex=1 -interaction=nonstopmode %.tex|biber %.bcf|xelatex -synctex=1 -interaction=nonstopmode %.tex|xelatex -synctex=1 -interaction=nonstopmode %.tex"
+"xelatex -synctex=1 -interaction=nonstopmode %.tex|biber %.bcf|xelatex -synctex=1 -interaction=nonstopmode %.tex|xelatex -synctex=1 -interaction=nonstopmode %.tex"
 
 For Mac users::
 
- "/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex|"/usr/texbin/biber" %.bcf|"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex|"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex|open %.pdf
+"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex|"/usr/texbin/biber" %.bcf|"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex|"/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex|open %.pdf
 
 Typesetting
 ,,,,,,,,,,,
