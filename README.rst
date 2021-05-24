@@ -1,15 +1,11 @@
 =================================
-Yalım's XeLaTeX thesis template
+    Yalım's LaTeX template
 =================================
 
 The template is using the `Memoir class <http://www.ctan.org/tex-archive/macros/latex/contrib/memoir/>`_
 which includes a lot of useful and predefined commands. See the "Miscellaneous" chapter of the
 `Memoir manual <http://tug.ctan.org/tex-archive/macros/latex/contrib/memoir/memman.pdf>`_.
 Furthermore it uses XeLaTeX for maximum unicode support local fonts.
-
-An updated version of the code can be downloaded from the
-`repository at bitbucket.org <https://bitbucket.org/_laursen/laursens-xelatex-thesis-template/>`_.
-
 
 Options
 =======
@@ -99,4 +95,3 @@ Typesetting
 Simply press "Quick Build". This will run all necessary commands including setting up your bibliography if there are any changes to it.
 
 If the bibliography is not changed only ``xelatex`` needs to run one single time. You can therefore select XeLaTeX from the run menu instead of the default in Quick build.
-
